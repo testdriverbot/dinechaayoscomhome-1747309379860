@@ -1,0 +1,18 @@
+version: 4.2.29
+session: 6825d62c013564b4d0e53ea5
+steps:
+  - prompt: Navigate to the homepage URL.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - l
+      - command: type
+        text: https://www.example.com
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Assert that the homepage content is displayed correctly.
+    commands:
+      - command: assert
+        expect: Example Domain is visible on the page
