@@ -1,0 +1,8 @@
+version: 4.2.29
+session: 6825d620013564b4d0e53e9a
+steps:
+  - prompt: Click on the navigation menu.
+    commands:
+      - command: hover-image
+        description: three vertical dots in the top right corner of the browser
+        action: click
