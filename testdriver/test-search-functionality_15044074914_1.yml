@@ -1,0 +1,21 @@
+version: 4.2.29
+session: 6825d620da2f9609221ab010
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: press-keys
+        keys:
+          - control
+          - l
+      - command: type
+        text: sample query
+      - command: hover-text
+        text: Google Search
+        description: button below the search bar
+        action: click
+  - prompt: Assert that search results are displayed.
+    commands:
+      - command: assert
+        expect: search results for "sample query letters" are displayed
